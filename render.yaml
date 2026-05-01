@@ -3,17 +3,18 @@ services:
     name: duramet
     env: php
     rootDir: .
-    buildCommand: "composer install --no-dev --optimize-autoloader"
+    plan: free
+    buildCommand: ""
     startCommand: "heroku-php-apache2"
     envVars:
       - key: DB_HOST
+        sync: false
+      - key: DB_PORT
         sync: false
       - key: DB_USER
         sync: false
       - key: DB_PASS
         sync: false
       - key: DB_NAME
-        sync: false
-      - key: DB_PORT
         sync: false
     healthCheckPath: /
