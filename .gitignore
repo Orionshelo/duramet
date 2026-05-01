@@ -1,0 +1,31 @@
+# Base de datos y credenciales
+db_connection.php
+.env
+*.sql
+
+# Uploads y archivos subidos
+uploads/
+*.tmp
+
+# IDE y editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+error_log
+
+# Composer
+/vendor/
+composer.lock
+
+# Node (si se agrega luego)
+node_modules/
