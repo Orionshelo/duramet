@@ -1,11 +1,10 @@
 services:
   - type: web
     name: duramet
-    env: php
-    rootDir: .
+    runtime: php
     plan: free
     buildCommand: ""
-    startCommand: "heroku-php-apache2"
+    startCommand: ""
     envVars:
       - key: DB_HOST
         sync: false
@@ -17,4 +16,5 @@ services:
         sync: false
       - key: DB_NAME
         sync: false
+    autoDeploy: true
     healthCheckPath: /
